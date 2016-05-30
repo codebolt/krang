@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ann name="2hrann">
+  <input>
+    <agent class="MATrendAgent" duration="01:00:00" shortint="4" longint="12"/>
+    <agent class="MATrendAgent" duration="00:01:00" shortint="5" longint="25"/>
+  </input>
+  <hidden>
+    <hlayer size="2"/>
+  </hidden>
+  <output>
+    <out duration="02:00:00"/>
+  </output>
+</ann>

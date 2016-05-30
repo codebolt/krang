@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ann name="30minann">
+  <input>
+    <agent class="MATrendAgent" duration="01:00:00" shortint="4" longint="12"/>
+    <agent class="MATrendAgent" duration="00:10:00" shortint="10" longint="30"/>
+    <agent class="MATrendAgent" duration="00:01:00" shortint="5" longint="25"/>
+    <agent class="SPSupportAgent" duration="01:00:00" lookback="8" spthresh="0.05" pthresh="0.005"/>
+  </input>
+  <hidden>
+    <hlayer size="3"/>
+  </hidden>
+  <output>
+    <out duration="00:30:00"/>
+  </output>
+</ann>

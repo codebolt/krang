@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simulation type="test">
+  <data ticker="DNBNOR" from="2005/01/01" to="2006/01/01"/>
+  <ann name="30minann"/>
+  <traincfg load="false" lrate="0.60" lmom="0.30"/>
+  <!-- only used when simulation type="train" -->
+</simulation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<simulation type="train">
+  <data ticker="DNBNOR" from="2003/01/01" to="2005/01/01"/>
+  <ann name="testann"/>
+  <traincfg load="true" lrate="0.40" lmom="0.05"/>
+</simulation>
+

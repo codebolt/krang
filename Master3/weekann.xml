@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ann name="weekann">
+  <input>
+    <agent class="MATrendAgent" duration="24:00:00" shortint="30" longint="60"/>
+    <agent class="MATrendAgent" duration="24:00:00" shortint="20" longint="40"/>
+    <agent class="MATrendAgent" duration="24:00:00" shortint="10" longint="30"/>
+
+    <agent class="MASupportAgent" duration="24:00:00" intervals="30" threshold="0.005"/>
+
+    
+    <agent class="SPSupportAgent" duration="24:00:00" lookback="8" spthresh="0.20" pthresh="0.01"/>
+    <agent class="SPSupportAgent" duration="24:00:00" lookback="8" spthresh="0.10" pthresh="0.005"/>
+
+    <agent class="TrendLineAgent" duration="24:00:00" spthresh="0.15" pthresh="0.01"/>
+
+    <agent class="FibonacciAgent" duration="24:00:00" spthresh="0.15" pthresh="0.005"/>
+
+    <agent class="RSILevelAgent" duration="24:00:00" intervals="14"/>
+    <agent class="RSIDivAgent" duration="24:00:00" intervals="14" csthresh="0.10"/>
+  </input>
+  <hidden>
+    <hlayer size="7"/>
+  </hidden>
+  <output>
+    <out duration="168:00:00"/>
+  </output>
+</ann>

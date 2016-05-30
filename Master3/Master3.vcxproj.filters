@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4353a9cd-7720-4a09-9438-b73bb4067294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\src">
+      <UniqueIdentifier>{f4ba2361-5026-43b4-99c0-b521afab4f55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{05fe5e22-47de-4b05-95d7-b802cf04d82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\src">
+      <UniqueIdentifier>{30420234-cca9-4356-be7f-c5655711b00f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TA">
+      <UniqueIdentifier>{2e331e37-202d-4758-91d5-d41d2d386e57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TA\src">
+      <UniqueIdentifier>{8d5748a9-af20-4cc6-9b92-6fdb7a658800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agents">
+      <UniqueIdentifier>{5b254b39-89a5-42b9-bb8e-f1dd75a00163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agents\src">
+      <UniqueIdentifier>{e6c35190-14a8-40b1-9e24-e107c970e6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ANN">
+      <UniqueIdentifier>{ae75c714-0403-4b10-aad0-c936644971e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ANN\src">
+      <UniqueIdentifier>{77cdd839-288b-40dd-9285-91da114bfbeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include=".cfg">
+      <UniqueIdentifier>{11ce6905-fc84-4219-bb01-d7c8c20056b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Candlestick.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CandlestickSeries.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SimException.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Ticker.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Trade.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeSeries.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="AnnWindow.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CandlestickPlot.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphWindow.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlg.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Plot.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotOverlay.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumePlot.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="WinInclude.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="DivergenceTest.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadShoulderTransform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="MATrendClassifier.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingAverageTransform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotOverlayTransform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotTransform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="PVOTransform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="RsiTransform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="SupportResistanceTest.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="SvSwingPointVector.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="SwingPointVector.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncValue.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>TA</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentSignal.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleBottomAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleTopAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="FibonacciAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadShoulderAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="MASupportAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="MATrendAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="RsiDivAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="RsiLevelAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="SPSupportAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="TrendLineAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeAgent.h">
+      <Filter>Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuralNetwork.h">
+      <Filter>ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="StatLogger.h">
+      <Filter>ANN</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CandlestickSeries.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SimException.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulationInit.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Ticker.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeSeries.cpp">
+      <Filter>Core\src</Filter>
+    </ClCompile>
+    <ClCompile Include="AnnWindow.cpp">
+      <Filter>GUI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="CandlestickPlot.cpp">
+      <Filter>GUI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphWindow.cpp">
+      <Filter>GUI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg.cpp">
+      <Filter>GUI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Plot.cpp">
+      <Filter>GUI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumePlot.cpp">
+      <Filter>GUI\src</Filter>
+    </ClCompile>
+    <ClCompile Include="DivergenceTest.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="HeadShoulderTransform.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MATrendClassifier.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingAverageTransform.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotTransform.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PVOTransform.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RsiTransform.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportResistanceTest.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SvSwingPointVector.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SwingPointVector.cpp">
+      <Filter>TA\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleBottomAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleTopAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="FibonacciAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="HeadShoulderAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MASupportAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="MATrendAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RsiDivAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="RsiLevelAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SPSupportAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="TrendLineAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeAgent.cpp">
+      <Filter>Agents\src</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuralNetwork.cpp">
+      <Filter>ANN\src</Filter>
+    </ClCompile>
+    <ClCompile Include="NeuralNetworkPlot.cpp">
+      <Filter>ANN\src</Filter>
+    </ClCompile>
+    <ClCompile Include="StatLogger.cpp">
+      <Filter>ANN\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Libraries\FANN-2.2.0-Source\src\doublefann.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="2dayann.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="2hrann.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="30minann.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="30minsim.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="dailyann.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="intradayann.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="network1.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="simulation.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+    <Xml Include="weekann.xml">
+      <Filter>.cfg</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\pictures\icon1.ico" />
+    <Image Include="..\..\..\..\Pictures\kranglogo.bmp" />
+    <Image Include="kranglogo.bmp" />
+    <Image Include="..\..\..\..\Pictures\kranglogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="krang.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Master3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\pictures\wave1.bin" />
+  </ItemGroup>
+</Project>

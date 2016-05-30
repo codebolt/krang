@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ann name="testann">
+  <input>
+    <agent class="MATrendAgent" duration="01:00:00" shortint="10" longint="30"/>
+    <agent class="MATrendAgent" duration="24:00:00" shortint="5" longint="15"/>
+    <agent class="MASupportAgent" duration="01:00:00" intervals="20" threshold="0.0025"/>
+    <agent class="MASupportAgent" duration="01:00:00" intervals="10" threshold="0.0025"/>
+  </input>
+  <hidden>
+    <hlayer size="4"/>
+    <hlayer size="3"/>
+  </hidden>
+  <output>
+    <out duration="02:00:00"/>
+    <out duration="24:00:00"/>
+  </output>
+</ann>
+
+

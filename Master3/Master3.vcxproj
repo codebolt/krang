@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7A1B26DD-2092-46BD-B375-B6FE5786890A}</ProjectGuid>
+    <RootNamespace>Master3</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.24720.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Users\Rune\Documents\Krang\Project\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Rune\Documents\Krang\Project\Libraries\xerces-c-3.1.3\src;C:\Users\Rune\Documents\Krang\Project\Libraries\boost_1_61_0;C:\Users\Rune\Documents\Krang\Project\Libraries\FANN-2.2.0-Source\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;FANN_NO_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xerces-c_3D.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Version />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\Users\Rune\Documents\Krang\Project\Libraries\xerces-c-3.1.3\Build\Win32\VC12\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>D:\Code\Libraries\fann-2.1.0\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xerces-c_3.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Agent.h" />
+    <ClInclude Include="AgentSignal.h" />
+    <ClInclude Include="AnnWindow.h" />
+    <ClInclude Include="Candlestick.h" />
+    <ClInclude Include="CandlestickPlot.h" />
+    <ClInclude Include="CandlestickSeries.h" />
+    <ClInclude Include="DivergenceTest.h" />
+    <ClInclude Include="DoubleBottomAgent.h" />
+    <ClInclude Include="DoubleTopAgent.h" />
+    <ClInclude Include="FibonacciAgent.h" />
+    <ClInclude Include="GraphWindow.h" />
+    <ClInclude Include="HeadShoulderAgent.h" />
+    <ClInclude Include="HeadShoulderTransform.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="MASupportAgent.h" />
+    <ClInclude Include="MATrendAgent.h" />
+    <ClInclude Include="MATrendClassifier.h" />
+    <ClInclude Include="MovingAverageTransform.h" />
+    <ClInclude Include="NeuralNetwork.h" />
+    <ClInclude Include="Plot.h" />
+    <ClInclude Include="PlotOverlay.h" />
+    <ClInclude Include="PlotOverlayTransform.h" />
+    <ClInclude Include="PlotTransform.h" />
+    <ClInclude Include="PVOTransform.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RsiDivAgent.h" />
+    <ClInclude Include="RsiLevelAgent.h" />
+    <ClInclude Include="RsiTransform.h" />
+    <ClInclude Include="SimException.h" />
+    <ClInclude Include="Simulation.h" />
+    <ClInclude Include="SPSupportAgent.h" />
+    <ClInclude Include="StatLogger.h" />
+    <ClInclude Include="SupportResistanceTest.h" />
+    <ClInclude Include="SvSwingPointVector.h" />
+    <ClInclude Include="SwingPointVector.h" />
+    <ClInclude Include="SyncValue.h" />
+    <ClInclude Include="Ticker.h" />
+    <ClInclude Include="Trade.h" />
+    <ClInclude Include="TradeSeries.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="TrendLineAgent.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="VolumeAgent.h" />
+    <ClInclude Include="VolumePlot.h" />
+    <ClInclude Include="WinInclude.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Libraries\FANN-2.2.0-Source\src\doublefann.c" />
+    <ClCompile Include="Agent.cpp" />
+    <ClCompile Include="AnnWindow.cpp" />
+    <ClCompile Include="CandlestickPlot.cpp" />
+    <ClCompile Include="CandlestickSeries.cpp" />
+    <ClCompile Include="DivergenceTest.cpp" />
+    <ClCompile Include="DoubleBottomAgent.cpp" />
+    <ClCompile Include="DoubleTopAgent.cpp" />
+    <ClCompile Include="FibonacciAgent.cpp" />
+    <ClCompile Include="GraphWindow.cpp" />
+    <ClCompile Include="HeadShoulderAgent.cpp" />
+    <ClCompile Include="HeadShoulderTransform.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="MASupportAgent.cpp" />
+    <ClCompile Include="MATrendAgent.cpp" />
+    <ClCompile Include="MATrendClassifier.cpp" />
+    <ClCompile Include="MovingAverageTransform.cpp" />
+    <ClCompile Include="NeuralNetwork.cpp" />
+    <ClCompile Include="NeuralNetworkPlot.cpp" />
+    <ClCompile Include="Plot.cpp" />
+    <ClCompile Include="PlotTransform.cpp" />
+    <ClCompile Include="PVOTransform.cpp" />
+    <ClCompile Include="RsiDivAgent.cpp" />
+    <ClCompile Include="RsiLevelAgent.cpp" />
+    <ClCompile Include="RsiTransform.cpp" />
+    <ClCompile Include="SimException.cpp" />
+    <ClCompile Include="Simulation.cpp" />
+    <ClCompile Include="SimulationInit.cpp" />
+    <ClCompile Include="SPSupportAgent.cpp" />
+    <ClCompile Include="StatLogger.cpp" />
+    <ClCompile Include="SupportResistanceTest.cpp" />
+    <ClCompile Include="SvSwingPointVector.cpp" />
+    <ClCompile Include="SwingPointVector.cpp" />
+    <ClCompile Include="Ticker.cpp" />
+    <ClCompile Include="TradeSeries.cpp" />
+    <ClCompile Include="TrendLineAgent.cpp" />
+    <ClCompile Include="VolumeAgent.cpp" />
+    <ClCompile Include="VolumePlot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="2dayann.xml" />
+    <Xml Include="2hrann.xml" />
+    <Xml Include="30minann.xml" />
+    <Xml Include="30minsim.xml" />
+    <Xml Include="dailyann.xml" />
+    <Xml Include="intradayann.xml" />
+    <Xml Include="network1.xml" />
+    <Xml Include="simulation.xml" />
+    <Xml Include="weekann.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\pictures\icon1.ico" />
+    <Image Include="..\..\..\..\Pictures\kranglogo.bmp" />
+    <Image Include="..\..\..\..\Pictures\kranglogo.png" />
+    <Image Include="kranglogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="krang.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Master3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\pictures\wave1.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

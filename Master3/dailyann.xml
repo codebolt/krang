@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ann name="network1">
+  <input>
+    <agent class="MATrendAgent" duration="24:00:00" shortint="10" longint="30"/>
+    <agent class="MATrendAgent" duration="24:00:00" shortint="5" longint="15"/>
+
+    <agent class="MASupportAgent" duration="24:00:00" intervals="20" threshold="0.005"/>
+    <agent class="MASupportAgent" duration="24:00:00" intervals="10" threshold="0.005"/>
+
+    <agent class="SPSupportAgent" duration="24:00:00" lookback="8" spthresh="0.20" pthresh="0.01"/>
+    <agent class="SPSupportAgent" duration="24:00:00" lookback="8" spthresh="0.10" pthresh="0.005"/>
+
+    <agent class="FibonacciAgent" duration="24:00:00" spthresh="0.20" pthresh="0.005"/>
+
+    <agent class="RSILevelAgent" duration="24:00:00" intervals="14"/>
+    <agent class="RSIDivAgent" duration="24:00:00" intervals="14" csthresh="0.20"/>
+
+    <agent class="VolumeAgent" duration="24:00:00" lintervals="15" sintervals="5"/>
+  </input>
+  <hidden>
+    <hlayer size="8"/>
+  </hidden>
+  <output>
+    <out duration="02:00:00"/>
+  </output>
+</ann>
